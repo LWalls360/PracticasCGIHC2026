@@ -134,21 +134,17 @@ int main() {
 
 
 		//// 2
-		//glDrawArrays(GL_POINTS, 0, 1);
-		//glDrawArrays(GL_POINTS, 1, 1);
-		//glDrawArrays(GL_POINTS, 2, 1);
-		//glDrawArrays(GL_POINTS, 3, 1);
+		//glDrawElements(GL_POINTS, 4, GL_UNSIGNED_INT, 0);
 
 		//// 3
 		//glDrawArrays(GL_LINES, 0, 2);
 		//glDrawArrays(GL_LINES, 2, 2);
 
 		////4
-		//glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+		glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, (void*)(5*sizeof(unsigned int)));
 
 		//5
-		//glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, 0);
-		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+		//glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
 
         
